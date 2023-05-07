@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins' , sans-serif;
+    box-sizing: border-box;
+    
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+#header{
+    width:100%;
+    height: 96vh;
+    background-image: url(image/design1.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+.container{
+    padding: 10px 10%;
+    margin-left: 780px;
+    margin-top: -180px;
+}
+.head{
+    white-space: nowrap;
+    margin-top: 10%;
+}
+.cont{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 200px;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;  
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.headertext{
+    margin-top: 40%;
+    position: relative;
+    left: -130%;
+    font-size: 23px;
+    
+
+}
+.headertext h1{
+    font-size: 50px; 
+    margin-top: 20px;
+}
+.headertext h1 snap{
+    color: #ff004f;
+}
+#about{
+    padding: 80px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.me{
+    width: 600px;
+    position: relative;
+    right: 120%;
+    margin-top: 40%;
+    border-radius: 15%;
+}
+.about-col-1{
+    flex-basis:  35%;
+}
+.about-col-2{
+    flex-basis: 60%;
+    position: relative;
+    left: 0%;
+    margin-top: -96%;
+}
+.subtitle{
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+    left: -8%;
+    color: #ff004f;
+}
+.para{
+    
+    margin-top: 4%;
+    font-size: 15px;
+    white-space: nowrap;
+    position: relative;
+    left: -10%;
+    color: #fff;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+    position: relative;
+    left: -10%;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 60%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+    position: relative;
+    left: -10%;
+}
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/* ------ portfolio---------------*/
+/*#portfolio{
+    padding: 50px 0;
+}*/
+.worklist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px , 1fr));
+    grid-gap: 40px;
+    position: relative;
+    bottom: 50%;
+    margin-top: 50px;
+}
+.sub-titles{
+    margin-top: 50%;
+    font-size: 50px;
+    color: #ff004f;
+    position: relative;
+    left: -130%;
+}
+.sub-titles::after{
+    content: '';
+    width: 60%;
+    margin-top: 30%;
+    height: 8px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+.payimg{
+    margin-top: 20%;
+}
+.payheading{
+    margin-top: -160%;
+    font-size: 35px;
+    position: relative;
+    left: -130%;
+}
+.para1{
+    margin-top: 8%;
+    font-size: 20px;
+    white-space: nowrap;
+    position: relative;
+    left: -127%;
+    color: #fff;
+}
+.hotelimg{
+    width: 400px;
+    margin-top: 30%;
+    position: relative;
+    left: 10%;
+}
+.hotelheading{
+    margin-top: 40%;
+    font-size: 35px;
+    position: relative;
+    left: -130%;
+}
+.para2{
+    margin-top: 10%;
+    font-size: 20px;
+    white-space: nowrap;
+    position: relative;
+    left: -127%;
+    color: #fff;
+}
+.btn1{
+    display: block;
+    margin-top: -90%;
+    position: relative;
+    left: -105%;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn1:hover{
+    background: #ff004f;
+}
+.btn2{
+    display: block;
+    margin-top: 90%;
+    position: relative;
+    left: -105%;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn2:hover{
+    background: #ff004f;
+}
+.social-icons{
+    color: #b54769;
+    margin-top: 10%;
+    position: relative;
+    left: -290%;
+}
+.sub-titled{
+    margin-top: 180%;
+    font-weight: 600;
+    font-size: 40px;
+    color: #ff004f;
+    white-space: nowrap;
+    position: relative;
+    left: -290%;
+}
+.sub-titled::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p {
+    flex-basis: 35%;
+}
+
+.mail{
+    margin-top: 20%;
+    position: relative;
+    left: -270%;
+}
+.plane{
+    width: 26px;
+    position: relative;
+    top: -4%;
+    left: -290%;
+}
+.phone{
+    margin-top: 0%;
+    position: relative;
+    left: -270%;
+}
+.smart{
+    width: 26px;
+    position: relative;
+    top: -4%;
+    left: -290%;
+}
+.insta{
+    width: 40px;
+
+}
+.facebook{
+    width: 40px;
+
+}
+.linkedin{
+    width: 40px;
+
+}
+.twitter{
+    width: 40px;
+
+}
+.btn3{
+    display: inline-block;
+    margin-top: 20%;
+    background: #ff004f;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 40px;
+    border-radius: 6px;
+    color: #fff;
+}
+.contact-right form{
+    width: 100%;
+
+}
+form input, form textarea{
+    width: 150%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.text{
+    position: relative;
+    margin-top: 100%;
+    margin-left: -70%;
+}
+.btn4{
+    
+    display: inline-block;
+    position: relative;
+    margin-top: -30%;
+    left: 60%;
+    background: #ff004f;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 40px;
+    border-radius: 6px;
+    color: #fff;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.heart{
+    width: 20px;
+    position: relative;
+    top: 5px;
+}
+/* @media only screen and (max-width=900px){
+    #header{
+        background-image: url(image/Untitled\design.png);
+    }
+    .head{
+        margin-top: 100%;
+        font-size: 14px;
+        
+    
+    }
+    
+}*/
